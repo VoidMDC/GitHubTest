@@ -8,7 +8,7 @@ public class PrintNames : MonoBehaviour {
 	private Text _namesTextBox;
 
 	// Please add your full name to the array under this comment. Remember to have a comma before your name and put your name in double quotes. 
-	private string [] names = {"Ray Millares", "Alexander Villarreal"};
+	private string [] names = {"Ray Millares", "Alexander Villarreal", "Gabriel Cabrera"};
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,8 @@ public class PrintNames : MonoBehaviour {
 
 		foreach (string name in names)
 		{
-			_namesTextBox.text += name + ", ";
+			_namesTextBox.text += name + ",\n";
+			// ^ harder to see all the names if they're all on one line, hence the newline I added
 		}
 
 	}
